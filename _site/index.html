@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Welcome to TLA+ Benchmarks | tlabenchmarks</title>
+<meta name="generator" content="Jekyll v3.7.3" />
+<meta property="og:title" content="Welcome to TLA+ Benchmarks" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A thousand and one of TLA+ specifications" />
+<meta property="og:description" content="A thousand and one of TLA+ specifications" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="tlabenchmarks" />
+<script type="application/ld+json">
+{"name":"tlabenchmarks","description":"A thousand and one of TLA+ specifications","@type":"WebSite","url":"http://localhost:4000/","headline":"Welcome to TLA+ Benchmarks","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="/assets/css/style.css?v=2b734d8eaecc115d95cbe9c96f50a7ed6eba02bd">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">tlabenchmarks</h1>
+      <h2 class="project-tagline">A thousand and one of TLA<sup>+</sup> specifications</h2>
+      
+        <a href="http://github.com/thanhhai1302/tlabenchmarks" class="btn">View on GitHub</a>
+      
+      
+    </section>
+
+    <section class="main-content">
+      
+<h2 id="welcome-to-tla-benchmarks">Welcome to TLA<sup>+</sup> Benchmarks</h2>
+
+<p>The page <strong>TLA<sup>+</sup> Benchmarks</strong> is a library of TLA<sup>+</sup> specifications for distributed algorithms. The webpage supplies the TLA<sup>+</sup> community with:</p>
+
+<ul>
+  <li>A comprehensive library of the TLA<sup>+</sup> specifications that are available today, in order to provide an overview of how to specify an algorithm in TLA<sup>+</sup>.</li>
+  <li>A comprehensive list of references and other interesting information for each problem.</li>
+</ul>
+
+<p>We encourage the submission of new challenging TLA<sup>+</sup> benchmarks.</p>
+
+<h3 id="list-of-benchmarks">List of benchmarks</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Short description</th>
+      <th>Failures</th>
+      <th>Thresholds</th>
+      <th>Properties</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="http://list.cs.northwestern.edu/802.16/">802.16</a></td>
+      <td><a href="https://ieeexplore.ieee.org/document/5062485/">IEEE 802.16 WiMAX Protocols</a> <br /> <a href="https://www.cs.northwestern.edu/~ychen/Papers/npsec06.pdf"> Checking of 802.16 throung TLA</a></td>
+      <td> </td>
+      <td>retry &lt; NUM * 3</td>
+      <td>deadlock, correctness</td>
+    </tr>
+    <tr>
+      <td>aba-asyn-byzagreement0</td>
+      <td>Asynchronous Byzantine agreement</td>
+      <td>Byzantine</td>
+      <td>N &gt; 3 * T, T &gt;= F &gt;= 0</td>
+      <td>unforgeability, correctness, agreement</td>
+    </tr>
+    <tr>
+      <td><a href="https://members.loria.fr/SMerz/talks/argentina2005/Charpentier/charpov/Teaching/CS-986/TLC/">acp-sb</a></td>
+      <td><a href="https://dl.acm.org/citation.cfm?id=302436">Non-blocking atomic commitment</a> with a simple broadcast</td>
+      <td>clean crashes</td>
+      <td>∀ j ∈ participants</td>
+      <td>AC1-AC4, no recovery</td>
+    </tr>
+    <tr>
+      <td>Assignment</td>
+      <td>——————————————————-</td>
+      <td>————-</td>
+      <td>—————————</td>
+      <td>————————————————————-</td>
+    </tr>
+    <tr>
+      <td>ast</td>
+      <td>——————————————————-</td>
+      <td>————-</td>
+      <td>—————————</td>
+      <td>————————————————————-</td>
+    </tr>
+    <tr>
+      <td>async-comm</td>
+      <td>——————————————————-</td>
+      <td>————-</td>
+      <td>—————————</td>
+      <td>————————————————————-</td>
+    </tr>
+    <tr>
+      <td>bcastByz</td>
+      <td>Asynchronous reliable broadcast</td>
+      <td>Byzantine</td>
+      <td>N &gt;= 3 * T, T &gt;= F &gt;= 0</td>
+      <td>unforgeability, correctness, relay</td>
+    </tr>
+    <tr>
+      <td>bcastFolklore</td>
+      <td>Folklore reliable broadcast</td>
+      <td>clean crashes</td>
+      <td>N &gt; 1</td>
+      <td>unforgeability, correctness, relay</td>
+    </tr>
+    <tr>
+      <td>bosco</td>
+      <td>One-Step Byzantine asynchronous consensus</td>
+      <td>Byzantine</td>
+      <td>N &gt; 3T or N &gt; 5T or N &gt; 7T</td>
+      <td>————————————————————-</td>
+    </tr>
+    <tr>
+      <td>Boulangerie</td>
+      <td>A variant of the bakery algorithm</td>
+      <td>————-</td>
+      <td>—————————</td>
+      <td>————————————————————-</td>
+    </tr>
+    <tr>
+      <td>c1cs</td>
+      <td>Consensus in one communication step</td>
+      <td>clean crashes</td>
+      <td>N &gt; 3 * T</td>
+      <td>————————————————————-</td>
+    </tr>
+    <tr>
+      <td>caesar4</td>
+      <td>——————————————————-</td>
+      <td>————-</td>
+      <td>—————————</td>
+      <td>————————————————————-</td>
+    </tr>
+    <tr>
+      <td>cbc_max</td>
+      <td>Condition-based consensus</td>
+      <td>Byzantine</td>
+      <td>N &gt; 2 * T, T &gt;= F &gt;= 0</td>
+      <td>validity, agreement, termination</td>
+    </tr>
+    <tr>
+      <td>cf1s-folklore-onestep</td>
+      <td>One-step consensus</td>
+      <td>crashes</td>
+      <td>N &gt; 3 * T</td>
+      <td>————————————————————-</td>
+    </tr>
+    <tr>
+      <td>Chang-Roberts</td>
+      <td>Leader election in a ring</td>
+      <td>————-</td>
+      <td>—————————</td>
+      <td>————————————————————-</td>
+    </tr>
+    <tr>
+      <td>DataPort</td>
+      <td>Dataport protocal 505.89PT</td>
+      <td>————-</td>
+      <td>—————————</td>
+      <td>————————————————————-</td>
+    </tr>
+    <tr>
+      <td>dijkstra-mutex</td>
+      <td>Dijkstra’s mutual exclusion algorithm</td>
+      <td>————-</td>
+      <td>—————————</td>
+      <td>————————————————————-</td>
+    </tr>
+    <tr>
+      <td>diskpaxos</td>
+      <td>——————————————————-</td>
+      <td>————-</td>
+      <td>—————————</td>
+      <td>————————————————————-</td>
+    </tr>
+    <tr>
+      <td>DoRiS</td>
+      <td>——————————————————-</td>
+      <td>————-</td>
+      <td>—————————</td>
+      <td>————————————————————-</td>
+    </tr>
+    <tr>
+      <td>egalitarian-paxos</td>
+      <td>——————————————————-</td>
+      <td>————-</td>
+      <td>—————————</td>
+      <td>————————————————————-</td>
+    </tr>
+    <tr>
+      <td>ewd840</td>
+      <td>Detecting distributed termination</td>
+      <td>————-</td>
+      <td>—————————</td>
+      <td>————————————————————-</td>
+    </tr>
+    <tr>
+      <td>detector_chan96</td>
+      <td>Eventually perfect failure detector</td>
+      <td>clean crashes</td>
+      <td>—————————</td>
+      <td>strong completeness, eventual strong accuracy</td>
+    </tr>
+    <tr>
+      <td>fastpaxos</td>
+      <td>——————————————————-</td>
+      <td>————-</td>
+      <td>—————————</td>
+      <td>————————————————————-</td>
+    </tr>
+    <tr>
+      <td>fpaxos</td>
+      <td>——————————————————-</td>
+      <td>————-</td>
+      <td>—————————</td>
+      <td>————————————————————-</td>
+    </tr>
+    <tr>
+      <td>lamport_mutex</td>
+      <td>Lamport’s mutual-exclusion</td>
+      <td>————-</td>
+      <td>—————————</td>
+      <td>————————————————————-</td>
+    </tr>
+    <tr>
+      <td>l1</td>
+      <td>data center network L1 switch protocol, only PDF files</td>
+      <td>————-</td>
+      <td>—————————</td>
+      <td>————————————————————-</td>
+    </tr>
+    <tr>
+      <td>leaderless</td>
+      <td>——————————————————-</td>
+      <td>————-</td>
+      <td>—————————</td>
+      <td>————————————————————-</td>
+    </tr>
+    <tr>
+      <td>LongLivedAssignment</td>
+      <td>——————————————————-</td>
+      <td>————-</td>
+      <td>—————————</td>
+      <td>————————————————————-</td>
+    </tr>
+    <tr>
+      <td>losa_ap</td>
+      <td>——————————————————-</td>
+      <td>————-</td>
+      <td>—————————</td>
+      <td>————————————————————-</td>
+    </tr>
+    <tr>
+      <td>losa_rda</td>
+      <td>——————————————————-</td>
+      <td>————-</td>
+      <td>—————————</td>
+      <td>————————————————————-</td>
+    </tr>
+    <tr>
+      <td>m2paxos1</td>
+      <td>——————————————————-</td>
+      <td>————-</td>
+      <td>—————————</td>
+      <td>————————————————————-</td>
+    </tr>
+    <tr>
+      <td>m2paxos2</td>
+      <td>——————————————————-</td>
+      <td>————-</td>
+      <td>—————————</td>
+      <td>————————————————————-</td>
+    </tr>
+    <tr>
+      <td>naiad</td>
+      <td>Naiad clock protocol, only PDF files</td>
+      <td>————-</td>
+      <td>—————————</td>
+      <td>————————————————————-</td>
+    </tr>
+    <tr>
+      <td>nbacc-asyn-ray97-clean</td>
+      <td>Asynchronous non-blocking atomic commit</td>
+      <td>clean crashes</td>
+      <td>N &gt; 1</td>
+      <td>validity, non-triviality, termination</td>
+    </tr>
+    <tr>
+      <td>nbacg-asyn-guer01-clean</td>
+      <td>Asynchronous non-blocking atomic commit</td>
+      <td>clean crashes</td>
+      <td>N &gt; 1</td>
+      <td>————————————————————-</td>
+    </tr>
+    <tr>
+      <td>nfc04</td>
+      <td>——————————————————-</td>
+      <td>————-</td>
+      <td>—————————</td>
+      <td>————————————————————-</td>
+    </tr>
+    <tr>
+      <td>paxos</td>
+      <td>Paxos consensus algorithm</td>
+      <td>————-</td>
+      <td>—————————</td>
+      <td>————————————————————-</td>
+    </tr>
+    <tr>
+      <td>raft</td>
+      <td>——————————————————-</td>
+      <td>————-</td>
+      <td>—————————</td>
+      <td>————————————————————-</td>
+    </tr>
+    <tr>
+      <td>transaction_commit</td>
+      <td>——————————————————-</td>
+      <td>————-</td>
+      <td>—————————</td>
+      <td>————————————————————-</td>
+    </tr>
+    <tr>
+      <td>TwoPhase</td>
+      <td>——————————————————-</td>
+      <td>————-</td>
+      <td>—————————</td>
+      <td>————————————————————-</td>
+    </tr>
+    <tr>
+      <td>ufd5</td>
+      <td>——————————————————-</td>
+      <td>————-</td>
+      <td>—————————</td>
+      <td>————————————————————-</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="support-or-contact">Support or Contact</h3>
+
+<p>Do you have any questions? Please contact  <a href="mailto: tran@forsyte.ac.at">Thanh-Hai Tran</a>.</p>
+
+
+      <footer class="site-footer">
+        
+          <span class="site-footer-owner"><a href="http://github.com/thanhhai1302/tlabenchmarks">tlabenchmarks</a> is maintained by <a href="http://github.com/thanhhai1302">thanhhai1302</a>.</span>
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+      </footer>
+    </section>
+
+    
+  </body>
+</html>
