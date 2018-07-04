@@ -12,7 +12,7 @@ We encourage the submission of new challenging TLA<sup>+</sup> benchmarks.
 
 | Name 												| Short description 																			| Failures 			| Thresholds 									| Properties 																										|
 | --------------------------- | ------------------------------------------------------- | ------------- | --------------------------- | ------------------------------------------------------------- |
-| <a href="http://list.cs.northwestern.edu/802.16/">802.16</a> | <a href="https://www.cs.northwestern.edu/~ychen/Papers/npsec06.pdf">IEEE 802.16 WiMAX Protocols</a> | ------------- | --------------------------- | ------------------------------------------------------------- |
+| <a href="http://list.cs.northwestern.edu/802.16/">802.16</a> | <a href="https://ieeexplore.ieee.org/document/5062485/">IEEE 802.16 WiMAX Protocols</a>, <a href="https://www.cs.northwestern.edu/~ychen/Papers/npsec06.pdf"> Checking of 802.16 throung TLA</a> | ------------- | --------------------------- | ------------------------------------------------------------- |
 | aba-asyn-byzagreement0			|	Asynchronous Byzantine agreement												| Byzantine			|	N > 3 * T, T >= F >= 0			| unforgeability, correctness, agreement												|
 | acp-nb-wrong								| ------------------------------------------------------- | ------------- | --------------------------- | ------------------------------------------------------------- |
 | acp-nb											| ------------------------------------------------------- | ------------- | --------------------------- | ------------------------------------------------------------- |
