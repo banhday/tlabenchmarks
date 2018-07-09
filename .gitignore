@@ -2,3 +2,9 @@
 benchmarks/detector_chan96/\.settings/
 
 benchmarks/detector_chan96/\.project
+
+benchmarks/aba-asyn-byz/aba_asyn_byz\.toolbox/\.project
+
+benchmarks/bcastByz/bcastByz\.toolbox/\.project
+
+.project
