@@ -67,15 +67,15 @@ Receive(i) ==
     /\ pc[i] # "CRASH" 
     /\ msg \in sntMsgs
     /\ msg \notin rcvdMsgs[i]
-    /\ rcvdMsgs' = [ rcvdMsgs EXCEPT ![i] = rcvdMsgs[i] \cup { msg } ]     
+    /\ rcvdMsgs' = [ rcvdMsgs EXCEPT ![i] = rcvdMsgs[i] \cup { msg } ]         
     /\ LET j == msg.sndr
        IN V' = [ V EXCEPT ![i][j] = IF \/ /\ pc[i] = "PHS1" 
                                           /\ msg.type = "Phs1"
                                        \/ /\ pc[i] = "PHS2" 
                                           /\ msg.type = "Phs2"
                                     THEN msg.value
-                                    ELSE V[i][j] ]
-    /\ UNCHANGED << pc, v, w, dval, nCrash, sntMsgs >>               
+                                    ELSE V[i][j] ] 
+    /\ UNCHANGED << pc, v, w, dval, nCrash, sntMsgs, V >>               
    
 (* Broadcasts PHASE1(v_i, i) *)  
 BcastPhs1(i) ==  
@@ -174,6 +174,6 @@ RealTermination == Condition1 => Termination
     
 =============================================================================
 \* Modification History
-\* Last modified Mon Jul 09 13:27:45 CEST 2018 by tthai
+\* Last modified Mon Jul 09 16:15:38 CEST 2018 by tthai
 \* Last modified Mon Jul 09 13:27:23 CEST 2018 by tran
 \* Created Tue Nov 22 10:32:35 CET 2016 by tran
