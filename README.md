@@ -1,4 +1,4 @@
-
+ 
 ## Welcome to TLA<sup>+</sup> Benchmarks 
 
 The page **TLA<sup>+</sup> Benchmarks** is a library of TLA<sup>+</sup> specifications for distributed algorithms. The webpage supplies the TLA<sup>+</sup> community with:
@@ -10,11 +10,11 @@ Do you have your own case study that you like to share with the community? Send 
 
 ### List of benchmarks
 
-| No | Name | Short description | Fault models	| Properties | Extended modules |
-| :--: | ----| -------------------------------------------------------- | :--------: | ---------  | ------- |
-|	1	| <a href="http://list.cs.northwestern.edu/802.16/">802.16</a> | <a href="https://ieeexplore.ieee.org/document/5062485/">IEEE 802.16 WiMAX Protocols</a>, <a href="https://www.cs.northwestern.edu/~ychen/Papers/npsec06.pdf"> Checking of 802.16 throung TLA</a> | no faults | DoS vulnerability | Int, Seq, FinSet |				
-|	2	| <a href="https://github.com/banhday/tlabenchmarks/tree/master/benchmarks/aba-asyn-byz">aba-asyn-byz</a>	|	<a href="https://dl.acm.org/citation.cfm?id=214134">Asynchronous Byzantine agreement</a> | Byzantine | correctness, agreement, unforgeability	|	Nat |
-|	3	| <a href="https://members.loria.fr/SMerz/talks/argentina2005/Charpentier/charpov/Teaching/CS-986/TLC/">acp-sb</a> | <a href="https://dl.acm.org/citation.cfm?id=302436">Babaoglu and Toueg's non-blocking atomic commitment</a> with a simple broadcast | clean crashes | AC1-AC5, no recovery, termincation | default theories	|			
+| No | Name  | Short description | Fault models	| Properties | Extended modules | 
+| :--: | ----| -------------------------------------------------------- | :--------: | ---------  | 
+|	1	| <a href="http://list.cs.northwestern.edu/802.16/">802.16</a> | <a href="https://ieeexplore.ieee.org/document/5062485/">IEEE 802.16 WiMAX Protocols</a>, <a href="https://www.cs.northwestern.edu/~ychen/Papers/npsec06.pdf">Checking of 802.16 throung TLA</a>  | no faults | DoS vulnerability | Int, Seq, FinSet | 
+|	2	| <a href="https://github.com/banhday/tlabenchmarks/tree/master/benchmarks/aba-asyn-byz">aba-asyn-byz</a>	|	<a href="https://dl.acm.org/citation.cfm?id=214134">Bracha and Toueg's asynchronous Byzantine agreement</a> | Byzantine | correctness, agreement, unforgeability	|	Nat | 
+|	3	| <a href="https://members.loria.fr/SMerz/talks/argentina2005/Charpentier/charpov/Teaching/CS-986/TLC/">acp-sb</a> | <a href="https://dl.acm.org/citation.cfm?id=302436">Babaoglu and Toueg's non-blocking atomic commitment</a> with a simple broadcast | clean crashes | AC1-AC5, no recovery, termincation | default theories	|	
 |	4	| <a href="https://members.loria.fr/SMerz/talks/argentina2005/Charpentier/charpov/Teaching/CS-986/TLC/">acp-nb</a> | <a href="https://dl.acm.org/citation.cfm?id=302436">Non-blocking atomic commitment</a> with a reliable broadcast | clean crashes | AC1-AC5, termination, AllAbort, AllCommit | default theories |				
 |	5	| <a href="https://members.loria.fr/SMerz/talks/argentina2005/Charpentier/charpov/Teaching/CS-986/TLC/">acp-nb-wrong</a> | Wrong version of <a href="https://dl.acm.org/citation.cfm?id=302436">non-blocking atomic commitment</a> with a reliable broadcast | clean crashes | AC1-AC5, termination, AllAbort, AllCommit | default theories |				
 |	6	| <a href="http://hurault.perso.enseeiht.fr/asynchronousCommunication/">async-comm</a> | <a href="https://link.springer.com/article/10.1007/s00165-016-0379-x">The diversity of asynchronous communication</a> | &#10067; | compatibility, termination |	Nat	|		
@@ -25,7 +25,7 @@ Do you have your own case study that you like to share with the community? Send 
 |	11	| <a href="http://lamport.azurewebsites.net/tla/byzpaxos.html">byzpaxos</a>	| <a href="http://lamport.azurewebsites.net/tla/byzsimple.pdf">Byzantizing Paxos by Refinement</a>	| Byzantine | Safety | Int, FinSet	|	
 |	12	| <a href="https://github.com/banhday/tlabenchmarks/tree/master/benchmarks/c1cs">c1cs</a> | <a href="https://link.springer.com/chapter/10.1007/3-540-44743-1_4">Consensus in one communication step</a>	| clean crashes	| validity, agreement,<br/>weak-agreement,<br/> termination |	Int, FinSet |	
 |	13	| <a href="https://github.com/banhday/tlabenchmarks/tree/master/benchmarks/cbc_max">cbc_max</a>	| <a href="https://ieeexplore.ieee.org/document/1209964/">Condition-based consensus</a>	| Byzantine	| validity, agreement, termination	| Int, FinSet |
-|	14	| <a href="https://github.com/nano-o/Caesar">Caesar</a> | <a href="https://ieeexplore.ieee.org/document/8023110/">Multi-leader generalized consensus protocol</a> | clean crashes | GraphInvariant,<br/> agreement |	Seq, Int |			
+|	14	| <a href="https://github.com/nano-o/Caesar">Caesar</a> | <a href="https://ieeexplore.ieee.org/document/8023110/">Multi-leader generalized consensus protocol</a> | clean crashes | GraphInvariant,<br/> agreement |	FinSet, Seq, Int |			
 |	15	| <a href="https://github.com/banhday/tlabenchmarks/tree/master/benchmarks/cf1s-folklore">cf1s-folklore</a>	| <a href="https://ieeexplore.ieee.org/abstract/document/1633503/">One-step consensus with zero-degradation</a>	| clean crashes	| OneStep0, OneStep1 |	Nat
 |	16	| <a href="https://github.com/tlaplus/Examples/tree/master/specifications/chang_roberts">ChangRoberts</a>	| <a href="https://dl.acm.org/citation.cfm?id=359108">Leader election in a ring</a> | no faults | termination | Nat, Seq |			
 |	17	| DataPort | <a href="https://ieeexplore.ieee.org/iel7/7858577/7862346/07862411.pdf">Dataport protocal 505.89PT</a>, only PDF files | no faults | deadlock | Int, Seq |				
@@ -42,16 +42,17 @@ Do you have your own case study that you like to share with the community? Send 
 |	28	| <a href="https://losa.fr/research/assignment/">losa_ap</a>	| <a href="https://dl.acm.org/citation.cfm?id=3154303">The assignment problem</a>, a variant of the allocation problem | &#10067; | fairness, consistency, correctness, termination |	FinSet, Nat, Seq  |		
 |	29	| <a href="https://www.losa.fr/Thesis.pdf">losa_rda</a>	| <a href="https://www.losa.fr/Thesis.pdf">Applying peculative linearizability to fault-tolerant message-passing algorithms and shared-memory consensus</a>, only PDF files | crashes,<br/> lost messages | correctness, refinement mapping | FinSet, Nat, Seq	|		
 |	30	| <a href="https://losa.fr/M2Paxos/">m2paxos</a>	| <a href="https://ieeexplore.ieee.org/document/7579738/">Multi-leader consensus protocols</a> | clean crashes | correctness | Int, Seq, FinSet	|		
-|	31	| naiad	| <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2013/02/paper.pdf">Naiad clock protocol</a>, only PDF files	| no faults | correctness |	Int, Seq, FinSet |	
-|	32	| <a href="https://github.com/banhday/tlabenchmarks/tree/master/benchmarks/nbacc_ray97">nbacc\_ray97</a>	| <a href="https://ieeexplore.ieee.org/document/648067/">Asynchronous non-blocking atomic commit</a>	| clean crashes	|	validity, nontriviality, termination | Nat, FinSet
-|	33	| <a href="https://github.com/banhday/tlabenchmarks/tree/master/benchmarks/nbacg_guer01">nbacg\_guer01</a>	| <a href="dl.acm.org/citation.cfm?id=380061">Asynchronous non-blocking atomic commit</a> | clean crashes	| agreement	, validity,<br/> integrity, termination | Nat, FinSet	|
-|	34	| <a href="http://www.steffen-zschaler.de/publications/NfC04/">nfc04</a>	| <a href="https://link.springer.com/article/10.1007/s10270-009-0115-6">Non-functional properties of component-based software systems</a> | no faults | ExecutionTimesOk, TimedCPUScheduler | Real, Nat |			
-|	35	| <a href="https://github.com/tlaplus/Examples/tree/master/specifications/Paxos">paxos</a>	| <a href="https://lamport.azurewebsites.net/pubs/lamport-paxos.pdf">Paxos consensus algorithm</a>	| crashes, lost/duplicated messages | TypeOK , Success | Int, FinSet	|	
-|	36	| <a href="https://github.com/ongardie/raft.tla">raft</a>	| <a href="https://raft.github.io/raft.pdf">Raft consensus algorithm</a> | crashes, lost/duplicated messages | deadlock | FinSet, Nat, Seq |			
-|	37	| <a href="https://github.com/banhday/tlabenchmarks/tree/master/benchmarks/spanning">spanning</a>	| Spanning tree broadcast algorithm in Attiya and Welch's book | no faults | OneParent, termination |	Int	|	
-|	38	| <a href="https://github.com/tlaplus/Examples/tree/master/specifications/transaction_commit">transaction_commit</a>	| <a href="https://dl.acm.org/citation.cfm?id=1132867">Consensus on transaction commit</a> | crashes, lost/duplicated messages | consistent, TypeOK |	Int	|	
-|	39	| <a href="https://github.com/tlaplus/Examples/tree/master/specifications/TwoPhase">TwoPhase</a>	| <a href="https://github.com/tlaplus/Examples/tree/master/specifications/TwoPhase">Two-phase handshaking</a> | no faults | Inv |	Nat	|	
-
+|	31	| <a href="https://github.com/nano-o/MultiPaxos">MultiPaxos</a>	| <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr-2005-33.pdf">The abstract specification of Generalized Paxos</a> | crashes, lost/duplicated messages | correctness | Int, FinSet	|		
+|	32	| naiad	| <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2013/02/paper.pdf">Naiad clock protocol</a>, only PDF files	| no faults | correctness |	Int, Seq, FinSet |	
+|	33	| <a href="https://github.com/banhday/tlabenchmarks/tree/master/benchmarks/nbacc_ray97">nbacc\_ray97</a>	| <a href="https://ieeexplore.ieee.org/document/648067/">Asynchronous non-blocking atomic commit</a>	| clean crashes	|	validity, nontriviality, termination | Nat, FinSet
+|	34	| <a href="https://github.com/banhday/tlabenchmarks/tree/master/benchmarks/nbacg_guer01">nbacg\_guer01</a>	| <a href="dl.acm.org/citation.cfm?id=380061">Asynchronous non-blocking atomic commit</a> | clean crashes	| agreement	, validity,<br/> integrity, termination | Nat, FinSet	|
+|	35	| <a href="http://www.steffen-zschaler.de/publications/NfC04/">nfc04</a>	| <a href="https://link.springer.com/article/10.1007/s10270-009-0115-6">Non-functional properties of component-based software systems</a> | no faults | ExecutionTimesOk, TimedCPUScheduler | Real, Nat |			
+|	36	| <a href="https://github.com/tlaplus/Examples/tree/master/specifications/Paxos">paxos</a>	| <a href="https://lamport.azurewebsites.net/pubs/lamport-paxos.pdf">Paxos consensus algorithm</a>	| crashes, lost/duplicated messages | TypeOK , Success | Int, FinSet	|	
+|	37	| <a href="https://github.com/ongardie/raft.tla">raft</a>	| <a href="https://raft.github.io/raft.pdf">Raft consensus algorithm</a> | crashes, lost/duplicated messages | deadlock | FinSet, Nat, Seq |			
+|	38	| <a href="https://github.com/banhday/tlabenchmarks/tree/master/benchmarks/spanning">spanning</a>	| Spanning tree broadcast algorithm in Attiya and Welch's book | no faults | OneParent, termination |	Int	|	
+|	39	| <a href="https://github.com/tlaplus/Examples/tree/master/specifications/transaction_commit">transaction_commit</a>	| <a href="https://dl.acm.org/citation.cfm?id=1132867">Consensus on transaction commit</a> | crashes, lost/duplicated messages | consistent, TypeOK |	Int	|	
+|	40	| <a href="https://github.com/tlaplus/Examples/tree/master/specifications/TwoPhase">TwoPhase</a>	| <a href="https://github.com/tlaplus/Examples/tree/master/specifications/TwoPhase">Two-phase handshaking</a> | no faults | Inv |	Nat	|	
+|	41	| <a href="https://github.com/nano-o/Distributed-termination-detection">Termination</a>	| <a href="https://link.springer.com/article/10.1007/BF01782776">Channel counting algorithm</a> | idle | termination |	FinSet, Bags, Nat	|
 
 ### Support or Contact
 

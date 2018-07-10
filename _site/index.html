@@ -56,7 +56,7 @@
     <tr>
       <td style="text-align: center">1</td>
       <td><a href="http://list.cs.northwestern.edu/802.16/">802.16</a></td>
-      <td><a href="https://ieeexplore.ieee.org/document/5062485/">IEEE 802.16 WiMAX Protocols</a>, <a href="https://www.cs.northwestern.edu/~ychen/Papers/npsec06.pdf"> Checking of 802.16 throung TLA</a></td>
+      <td><a href="https://ieeexplore.ieee.org/document/5062485/">IEEE 802.16 WiMAX Protocols</a>, <a href="https://www.cs.northwestern.edu/~ychen/Papers/npsec06.pdf">Checking of 802.16 throung TLA</a></td>
       <td style="text-align: center">no faults</td>
       <td>DoS vulnerability</td>
       <td>Int, Seq, FinSet</td>
@@ -64,7 +64,7 @@
     <tr>
       <td style="text-align: center">2</td>
       <td><a href="https://github.com/banhday/tlabenchmarks/tree/master/benchmarks/aba-asyn-byz">aba-asyn-byz</a></td>
-      <td><a href="https://dl.acm.org/citation.cfm?id=214134">Asynchronous Byzantine agreement</a></td>
+      <td><a href="https://dl.acm.org/citation.cfm?id=214134">Bracha and Toueg’s asynchronous Byzantine agreement</a></td>
       <td style="text-align: center">Byzantine</td>
       <td>correctness, agreement, unforgeability</td>
       <td>Nat</td>
@@ -163,7 +163,7 @@
       <td><a href="https://ieeexplore.ieee.org/document/8023110/">Multi-leader generalized consensus protocol</a></td>
       <td style="text-align: center">clean crashes</td>
       <td>GraphInvariant,<br /> agreement</td>
-      <td>Seq, Int</td>
+      <td>FinSet, Seq, Int</td>
     </tr>
     <tr>
       <td style="text-align: center">15</td>
@@ -295,6 +295,14 @@
     </tr>
     <tr>
       <td style="text-align: center">31</td>
+      <td><a href="https://github.com/nano-o/MultiPaxos">MultiPaxos</a></td>
+      <td><a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr-2005-33.pdf">The abstract specification of Generalized Paxos</a></td>
+      <td style="text-align: center">crashes, lost/duplicated messages</td>
+      <td>correctness</td>
+      <td>Int, FinSet</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">32</td>
       <td>naiad</td>
       <td><a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2013/02/paper.pdf">Naiad clock protocol</a>, only PDF files</td>
       <td style="text-align: center">no faults</td>
@@ -302,7 +310,7 @@
       <td>Int, Seq, FinSet</td>
     </tr>
     <tr>
-      <td style="text-align: center">32</td>
+      <td style="text-align: center">33</td>
       <td><a href="https://github.com/banhday/tlabenchmarks/tree/master/benchmarks/nbacc_ray97">nbacc_ray97</a></td>
       <td><a href="https://ieeexplore.ieee.org/document/648067/">Asynchronous non-blocking atomic commit</a></td>
       <td style="text-align: center">clean crashes</td>
@@ -310,7 +318,7 @@
       <td>Nat, FinSet</td>
     </tr>
     <tr>
-      <td style="text-align: center">33</td>
+      <td style="text-align: center">34</td>
       <td><a href="https://github.com/banhday/tlabenchmarks/tree/master/benchmarks/nbacg_guer01">nbacg_guer01</a></td>
       <td><a href="dl.acm.org/citation.cfm?id=380061">Asynchronous non-blocking atomic commit</a></td>
       <td style="text-align: center">clean crashes</td>
@@ -318,7 +326,7 @@
       <td>Nat, FinSet</td>
     </tr>
     <tr>
-      <td style="text-align: center">34</td>
+      <td style="text-align: center">35</td>
       <td><a href="http://www.steffen-zschaler.de/publications/NfC04/">nfc04</a></td>
       <td><a href="https://link.springer.com/article/10.1007/s10270-009-0115-6">Non-functional properties of component-based software systems</a></td>
       <td style="text-align: center">no faults</td>
@@ -326,7 +334,7 @@
       <td>Real, Nat</td>
     </tr>
     <tr>
-      <td style="text-align: center">35</td>
+      <td style="text-align: center">36</td>
       <td><a href="https://github.com/tlaplus/Examples/tree/master/specifications/Paxos">paxos</a></td>
       <td><a href="https://lamport.azurewebsites.net/pubs/lamport-paxos.pdf">Paxos consensus algorithm</a></td>
       <td style="text-align: center">crashes, lost/duplicated messages</td>
@@ -334,7 +342,7 @@
       <td>Int, FinSet</td>
     </tr>
     <tr>
-      <td style="text-align: center">36</td>
+      <td style="text-align: center">37</td>
       <td><a href="https://github.com/ongardie/raft.tla">raft</a></td>
       <td><a href="https://raft.github.io/raft.pdf">Raft consensus algorithm</a></td>
       <td style="text-align: center">crashes, lost/duplicated messages</td>
@@ -342,7 +350,7 @@
       <td>FinSet, Nat, Seq</td>
     </tr>
     <tr>
-      <td style="text-align: center">37</td>
+      <td style="text-align: center">38</td>
       <td><a href="https://github.com/banhday/tlabenchmarks/tree/master/benchmarks/spanning">spanning</a></td>
       <td>Spanning tree broadcast algorithm in Attiya and Welch’s book</td>
       <td style="text-align: center">no faults</td>
@@ -350,7 +358,7 @@
       <td>Int</td>
     </tr>
     <tr>
-      <td style="text-align: center">38</td>
+      <td style="text-align: center">39</td>
       <td><a href="https://github.com/tlaplus/Examples/tree/master/specifications/transaction_commit">transaction_commit</a></td>
       <td><a href="https://dl.acm.org/citation.cfm?id=1132867">Consensus on transaction commit</a></td>
       <td style="text-align: center">crashes, lost/duplicated messages</td>
@@ -358,12 +366,20 @@
       <td>Int</td>
     </tr>
     <tr>
-      <td style="text-align: center">39</td>
+      <td style="text-align: center">40</td>
       <td><a href="https://github.com/tlaplus/Examples/tree/master/specifications/TwoPhase">TwoPhase</a></td>
       <td><a href="https://github.com/tlaplus/Examples/tree/master/specifications/TwoPhase">Two-phase handshaking</a></td>
       <td style="text-align: center">no faults</td>
       <td>Inv</td>
       <td>Nat</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">41</td>
+      <td><a href="https://github.com/nano-o/Distributed-termination-detection">Termination</a></td>
+      <td><a href="https://link.springer.com/article/10.1007/BF01782776">Channel counting algorithm</a></td>
+      <td style="text-align: center">idle</td>
+      <td>termination</td>
+      <td>FinSet, Bags, Nat</td>
     </tr>
   </tbody>
 </table>
