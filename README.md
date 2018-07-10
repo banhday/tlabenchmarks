@@ -6,7 +6,7 @@ The page **TLA<sup>+</sup> Benchmarks** is a library of TLA<sup>+</sup> specific
 - A comprehensive library of the TLA<sup>+</sup> specifications that are available today, in order to provide an overview of how to specify an algorithm in TLA<sup>+</sup>.
 - A comprehensive list of references and other interesting information for each problem.
 
-We encourage the submission of new challenging TLA<sup>+</sup> benchmarks.
+Do you have your own case study that you like to share with the community? Send a pointer to us and we will include it in the repository. Your specifications will help the community in improving the tools for TLA<sup>+</sup> analysis.
 
 ### List of benchmarks
 
@@ -25,12 +25,12 @@ We encourage the submission of new challenging TLA<sup>+</sup> benchmarks.
 |	11	| <a href="http://lamport.azurewebsites.net/tla/byzpaxos.html">byzpaxos</a>	| <a href="http://lamport.azurewebsites.net/tla/byzsimple.pdf">Byzantizing Paxos by Refinement</a>	| Byzantine | Safety | Int, FinSet	|	
 |	12	| <a href="https://github.com/banhday/tlabenchmarks/tree/master/benchmarks/c1cs">c1cs</a> | <a href="https://link.springer.com/chapter/10.1007/3-540-44743-1_4">Consensus in one communication step</a>	| clean crashes	| validity, agreement,<br/>weak-agreement,<br/> termination |	Int, FinSet |	
 |	13	| <a href="https://github.com/banhday/tlabenchmarks/tree/master/benchmarks/cbc_max">cbc_max</a>	| <a href="https://ieeexplore.ieee.org/document/1209964/">Condition-based consensus</a>	| Byzantine	| validity, agreement, termination	| Int, FinSet |
-|	14	| <a href="https://arxiv.org/pdf/1704.03319.pdf">Caesar</a> | <a href="https://ieeexplore.ieee.org/document/8023110/">Multi-leader generalized consensus protocol</a>, only PDF files | clean crashes | GraphInvariant,<br/> agreement |	Seq, Int |			
+|	14	| <a href="https://github.com/nano-o/Caesar">Caesar</a> | <a href="https://ieeexplore.ieee.org/document/8023110/">Multi-leader generalized consensus protocol</a> | clean crashes | GraphInvariant,<br/> agreement |	Seq, Int |			
 |	15	| <a href="https://github.com/banhday/tlabenchmarks/tree/master/benchmarks/cf1s-folklore">cf1s-folklore</a>	| <a href="https://ieeexplore.ieee.org/abstract/document/1633503/">One-step consensus with zero-degradation</a>	| clean crashes	| OneStep0, OneStep1 |	Nat
 |	16	| <a href="https://github.com/tlaplus/Examples/tree/master/specifications/chang_roberts">ChangRoberts</a>	| <a href="https://dl.acm.org/citation.cfm?id=359108">Leader election in a ring</a> | no faults | termination | Nat, Seq |			
 |	17	| DataPort | <a href="https://ieeexplore.ieee.org/iel7/7858577/7862346/07862411.pdf">Dataport protocal 505.89PT</a>, only PDF files | no faults | deadlock | Int, Seq |				
 |	18	| <a href="https://github.com/tlaplus/Examples/tree/master/specifications/dijkstra-mutex">dijkstra-mutex</a>	| <a href="https://dl.acm.org/citation.cfm?id=365617">Dijkstra's mutual exclusion algorithm</a>	| no faults | mutex, starvation,<br/> termination | Int |		
-|	19	| diskpaxos	| <a href="https://lamport.azurewebsites.net/pubs/disk-paxos.pdf"> Disk Paxos</a>, only PDF files | crashes, inaccessibility | SynodSpec | Int	|		
+|	19	| <a href="https://github.com/nano-o/MultiPaxos/blob/master/DiskPaxos.tla">diskpaxos</a>	| <a href="https://lamport.azurewebsites.net/pubs/disk-paxos.pdf">Disk Paxos</a> | crashes, inaccessibility | SynodSpec | Int	|		
 |	20	| <a href="https://github.com/efficient/epaxos">egalitarian-paxos</a> | <a href="https://dl.acm.org/citation.cfm?id=2517350">Leaderless replication protocol based on Paxos</a> | crashes | nontriviality, stability, consistency |	Nat, FinSet	|		
 |	21	| <a href="https://github.com/tlaplus/Examples/tree/master/specifications/ewd840">ewd840</a>	| <a href="https://www.cs.utexas.edu/users/EWD/ewd08xx/EWD840.PDF">Dijkstra's algorithm for termination detection in a ring</a>	 | no faults | termination | Nat |		
 |	22	| <a href="https://github.com/banhday/tlabenchmarks/tree/master/benchmarks/detector_chan96">detector_chan96</a>	| <a href="https://dl.acm.org/citation.cfm?id=226647">Chandra and Toueg's eventually perfect failure detector</a>	| clean crashes	|	strong completeness,<br/> eventual strong accuracy | Int, FinSet |
