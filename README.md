@@ -10,8 +10,8 @@ Do you have your own case study that you like to share with the community? Send 
 
 ### List of benchmarks
 
-| No | Name  | Short description | Fault models	| Properties | Extended modules | 
-| :--: | ----| -------------------------------------------------------- | :--------: | ---------  | 
+| No 	 | Name  | Short description 																				| Fault models	| Properties | Extended modules | 
+| :--: | ----  | -------------------------------------------------------- | :--------: 		| ---------  | ---------  			| 
 | 1 | <a href="http://list.cs.northwestern.edu/802.16/">802.16</a> | <a href="https://ieeexplore.ieee.org/document/5062485/">IEEE 802.16 WiMAX Protocols</a> | no faults | DoS vulnerability | Int, Seq, FinSet | 
 | 2 | <a href="https://github.com/muratdem/PlusCal-examples/blob/master/2PCTM/2PCwithBTM.tla">2PCwithBTM</a> | <a href="http://lamport.azurewebsites.net/tla/two-phase.html">A modified version of P2TCommit</a> | no faults | consistency, NotCommitted | FinSet, Int, Seq | 
 | 3 | <a href="https://github.com/banhday/tlabenchmarks/tree/master/benchmarks/aba-asyn-byz">aba-asyn-byz</a> | <a href="https://dl.acm.org/citation.cfm?id=214134">Bracha and Toueg’s asynchronous Byzantine agreement</a> | Byzantine | correctness, agreement, unforgeability | Nat | 
