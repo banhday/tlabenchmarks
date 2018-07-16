@@ -77,7 +77,6 @@ Do you have your own case study that you like to share with the community? Send 
 ## License
 Every benchmark has initially the MIT license. If the authors want to change the license, we can create a special one for their benchmarks.  
 
-
 ## Support or Contact
 
 Do you have any questions? Please contact <a href="mailto: tran@forsyte.ac.at">Thanh-Hai Tran</a>.
