@@ -75,7 +75,7 @@ Do you have your own case study that you like to share with the community? Send 
 
 
 ## License
-Every benchmark has initially the MIT license. However, if the authors want to change the license, we can create a new license.  
+Every benchmark has initially the MIT license. If the authors want to change the license, we can create a special one for their benchmarks.  
 
 
 ## Support or Contact
